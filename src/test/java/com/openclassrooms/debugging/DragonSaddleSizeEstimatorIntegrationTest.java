@@ -18,7 +18,7 @@ public class DragonSaddleSizeEstimatorIntegrationTest {
         DragonSaddleSizeEstimator estimator = DragonSaddleSizeEstimator.INSTANCE;
 
         // Act
-        Double expectedSaddleSize = DragonSaddleSizeEstimator.INSTANCE.estimateSaddleSizeInCentiMeters(targetYear);
+        Double expectedSaddleSize =  estimator.estimateSaddleSizeInCentiMeters(targetYear);
 
         // Assert
         assertThat(expectedSaddleSize, is(equalTo(2019.0)));

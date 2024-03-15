@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.openclassrooms.debugging.DragonSaddleSizeEstimatorIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.279 s <<< FAILURE! -- in com.openclassrooms.debugging.DragonSaddleSizeEstimatorIntegrationTest
+com.openclassrooms.debugging.DragonSaddleSizeEstimatorIntegrationTest.estimateSaddleSizeInCentiMeters_shouldReturnTwentyPointNineteenMeters_whenCalculatingTheSizeIn2020 -- Time elapsed: 0.252 s <<< ERROR!
+com.openclassrooms.debugging.exception.InvalidSaddleSizeException: Taille de selle inattendue:-49.0
+	at com.openclassrooms.debugging.DragonSaddleSizeVerifier.verify(DragonSaddleSizeVerifier.java:13)
+	at com.openclassrooms.debugging.DragonSaddleSizeEstimator.estimateSaddleSizeInCentiMeters(DragonSaddleSizeEstimator.java:59)
+	at com.openclassrooms.debugging.DragonSaddleSizeEstimatorIntegrationTest.estimateSaddleSizeInCentiMeters_shouldReturnTwentyPointNineteenMeters_whenCalculatingTheSizeIn2020(DragonSaddleSizeEstimatorIntegrationTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
