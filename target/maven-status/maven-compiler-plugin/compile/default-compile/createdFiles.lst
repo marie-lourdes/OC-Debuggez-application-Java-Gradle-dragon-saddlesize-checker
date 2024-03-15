@@ -1,0 +1,5 @@
+com\openclassrooms\debugging\SaddleSizeReporter.class
+com\openclassrooms\debugging\DragonSaddleSizeGuesser.class
+com\openclassrooms\debugging\exception\InvalidSaddleSizeException.class
+com\openclassrooms\debugging\DragonSaddleSizeEstimator.class
+com\openclassrooms\debugging\DragonSaddleSizeVerifier.class

@@ -1,6 +1,11 @@
 package com.openclassrooms.debugging;
 
-import com.openclassrooms.debugging.exception.InvalidSaddleSizeException;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.verify;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -9,11 +14,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.mockito.Mockito.doThrow;
-import static org.mockito.Mockito.verify;
+import com.openclassrooms.debugging.exception.InvalidSaddleSizeException;
 
 @DisplayName("Given we have a saddle size estimatorUnderTest spell")
 @ExtendWith(MockitoExtension.class)
@@ -33,7 +34,7 @@ class DragonSaddleSizeEstimatorTest {
 
     }
 
-    @DisplayName("When estimating for a saddle size in the year 2 AD then the size is 2 centimeter")
+    @DisplayName("When estimating for a saddle size in the year 2 AD then the size is 1 centimeter")
     @Test
     public void estimateSaddleSize_shouldReturnASizeOfOne_forEarlyEraTwoAD() throws Exception {
         double estimatedSaddleSize = estimatorUnderTest.estimateSaddleSizeInCentiMeters(2);
