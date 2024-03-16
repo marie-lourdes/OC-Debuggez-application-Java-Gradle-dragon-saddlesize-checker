@@ -63,7 +63,8 @@ public class DragonSaddleSizeEstimator {
 
     private double calculateSaddleSizeFromYear(int targetYear) {
         // ((42-1)/41.0)
-        double universalLuckyNumber = new Double(UNIVERSAL_LUCKY_NUMBER);
+      //  double universalLuckyNumber = new Double(UNIVERSAL_LUCKY_NUMBER);
+    	double universalLuckyNumber =  Double.valueOf(UNIVERSAL_LUCKY_NUMBER);
         double mysticalMultiplier = (copyOfUniversalConstant - yearOfBirth)/ universalLuckyNumber;
         // Start by setting the saddle size to the dragon's current age
         int saddleSizeFactor = 0;

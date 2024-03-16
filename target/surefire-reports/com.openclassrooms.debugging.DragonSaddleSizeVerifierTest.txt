@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: com.openclassrooms.debugging.DragonSaddleSizeVerifierTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s -- in com.openclassrooms.debugging.DragonSaddleSizeVerifierTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.022 s <<< FAILURE! -- in com.openclassrooms.debugging.DragonSaddleSizeVerifierTest
+com.openclassrooms.debugging.DragonSaddleSizeVerifierTest.verify_shouldThrowAnInvalidSaddleSizeException_forZeroSaddleSizes -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected com.openclassrooms.debugging.exception.InvalidSaddleSizeException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3111)
+	at com.openclassrooms.debugging.DragonSaddleSizeVerifierTest.verify_shouldThrowAnInvalidSaddleSizeException_forZeroSaddleSizes(DragonSaddleSizeVerifierTest.java:32)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
