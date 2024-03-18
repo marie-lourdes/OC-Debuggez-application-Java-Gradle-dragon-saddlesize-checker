@@ -1,3 +1,4 @@
 com\openclassrooms\debugging\DragonSaddleSizeEstimatorTest.class
 com\openclassrooms\debugging\SaddleSizeReporterTest.class
+com\openclassrooms\debugging\DragonSaddleSizeEstimatorIntegrationTest.class
 com\openclassrooms\debugging\DragonSaddleSizeVerifierTest.class

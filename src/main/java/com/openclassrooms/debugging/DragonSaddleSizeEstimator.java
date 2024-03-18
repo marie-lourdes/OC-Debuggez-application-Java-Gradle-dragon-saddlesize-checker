@@ -7,9 +7,6 @@ package com.openclassrooms.debugging;
  */
 public class DragonSaddleSizeEstimator {
 
-    // Singleton instance of the Dragon Size Estimator
-    public static final DragonSaddleSizeEstimator INSTANCE = new DragonSaddleSizeEstimator();
-
     /**
      * The universal constant which is 42.
      */
@@ -24,6 +21,9 @@ public class DragonSaddleSizeEstimator {
     public static final int UNIVERSAL_LUCKY_NUMBER = 41;
 
 
+    // Singleton instance of the Dragon Size Estimator
+    public static final DragonSaddleSizeEstimator INSTANCE = new DragonSaddleSizeEstimator();
+    
     private int copyOfUniversalConstant;
     private int yearOfBirth;
     private DragonSaddleSizeVerifier verifier;
